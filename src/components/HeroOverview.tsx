@@ -1,6 +1,7 @@
 import React from 'react';
 import { ScenarioType } from '../types';
 import { ShieldCheck, Factory, Layers, ArrowLeftRight, CheckCircle2 } from 'lucide-react';
+import labImage from '../assets/images/plastic_injection_molding_lab_1793073297312.jpg';
 
 interface HeroOverviewProps {
   scenario: ScenarioType;
@@ -113,7 +114,7 @@ export const HeroOverview: React.FC<HeroOverviewProps> = ({
           <div className="lg:col-span-5 flex flex-col justify-center">
             <div className="relative rounded-2xl overflow-hidden border border-slate-200 shadow-sm bg-slate-900 group">
               <img
-                src="/src/assets/images/plastic_injection_molding_lab_1793073297312.jpg"
+                src={labImage}
                 alt="塑膠原料檢驗與精密射出成型實驗室"
                 referrerPolicy="no-referrer"
                 className="w-full h-56 sm:h-72 lg:h-full object-cover transition-transform duration-500 group-hover:scale-102"
