@@ -5,6 +5,8 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
+    // GitHub Pages 專案網站部署在 /1028-1/ 子路徑下
+    base: '/1028-1/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
